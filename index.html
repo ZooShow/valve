@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="gameStart">
+        <span>Each time you click on a valve, all
+             valves on the same vertical and horizontal are reversed. 
+             The challenge is to keep all valves horizontal.
+        </span>
+        <br>
+        <input id="play" type="button" value="Play!">
+    </div>
+    <div class="gameEnd none">
+        <span>You win!!!</span>
+        <br>
+        <input id="retry" type="button" value="Retry!">
+    </div>
+    <div class="gameBackground none">
+        <div class="gameField">
+            <div class="valve line1 row1 g1"></div>
+            <div class="valve line1 row2 g2"></div>
+            <div class="valve line1 row3 g3"></div>
+            <div class="valve line1 row4 g4"></div>
+            <div class="valve line2 row1 g5"></div>
+            <div class="valve line2 row2 g6"></div>
+            <div class="valve line2 row3 g7"></div>
+            <div class="valve line2 row4 g8"></div>
+            <div class="valve line3 row1 g9"></div>
+            <div class="valve line3 row2 g10"></div>
+            <div class="valve line3 row3 g11"></div>
+            <div class="valve line3 row4 g12"></div>
+            <div class="valve line4 row1 g13"></div>
+            <div class="valve line4 row2 g14"></div>
+            <div class="valve line4 row3 g15"></div>
+            <div class="valve line4 row4 g16"></div>
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nerko One', cursive;
+    color: black;
+    font-size: 4vw;
+}
+
+.gameBackground {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/background.jpg);
+}
+
+.gameField {
+    margin-left: 30vw;
+    width: 40vw;
+    height: 40vw;
+    display: grid;
+    grid-template: repeat(4, 10vw)/repeat(4, 10vw);
+    box-shadow: 0 0 10px black;
+}
+
+.valve {
+    background-image: url(img/valve.png);
+    background-size: 10vw 10vw;
+    transition: 0.1s linear all;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.gameEnd,
+.gameStart {
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+input {
+    width: 20vw;
+    height: 10vw;
+    color: black;
+    font-size: 4vw;
+    border-radius: 4vw;
+    border: none;
+}
+
+span {
+    color: white;
+}
+
+.none {
+    display: none;
+}
