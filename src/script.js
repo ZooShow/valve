@@ -42,8 +42,10 @@ play.onclick = function() {
         valve.onclick = function() {
             swap(valve);
             if (checkAll()) {
-                document.querySelector('.gameBackground').classList.add('none');
-                document.querySelector('.gameEnd').classList.remove('none');
+                setTimeout(() => {
+                    document.querySelector('.gameBackground').classList.add('none');
+                    document.querySelector('.gameEnd').classList.remove('none');
+                }, 300)
             };
         }
     }
